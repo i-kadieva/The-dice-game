@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to right bottom, #f37335, #fdc830);
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+}
+
+.player {
+	display: inline-block;
+	height: 70vh;
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: calc(30vh / 2) auto;
+	padding: 7rem;
+	text-align: center;
+}
+
+.player--0 {
+	margin-left: 10%;
+	margin-right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.player--1 {
+	margin-left: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.active-player {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.title {
+	font-size: 2.6rem;
+	text-transform: uppercase;
+}
+
+.score {
+	padding-top: 2rem;
+	font-size: 3.5rem;
+	color: #e65e1a;
+}
+
+.current-score {
+	display: inline-block;
+	background-color: #e65e1a;
+	border-radius: 5px;
+	padding: 1rem 4.5rem;
+	font-size: 1.6rem;
+	margin-top: 15rem;
+	color: #ffffff;
+}
+
+.current-score > div {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.control-btns {
+	height: 70%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-top: 3rem;
+	align-self: start;
+	text-align: center;
+}
+
+.btn {
+	padding: 0.7rem 2rem;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5rem;
+	text-align: center;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: translateY(1px);
+}
+
+.btn--roll {
+	margin-top: 14rem;
+}
+
+.btn--hold {
+	margin-top: 2rem;
+}
+
+.dice {
+	margin-top: 3.5rem;
+}
+
+.winner {
+	background-color: #000000;
+}
